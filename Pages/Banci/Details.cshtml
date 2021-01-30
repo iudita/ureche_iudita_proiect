@@ -1,0 +1,31 @@
+﻿@page
+@model ureche_iudita_proiect.Pages.Banci.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Banca</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Banca.nume)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Banca.nume)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Banca.contact)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Banca.contact)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Banca.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
